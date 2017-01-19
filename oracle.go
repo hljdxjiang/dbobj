@@ -11,7 +11,7 @@ import (
 
 	"github.com/hzwy23/dbobj/utils"
 
-	_ "github.com/mattn/go-oci8"
+	//	_ "github.com/mattn/go-oci8"
 )
 
 type dbobj struct {
