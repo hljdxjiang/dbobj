@@ -7,6 +7,7 @@
 > go get github.com/hzwy23/dbobj
 
 * 使用方法:
+
 ### oracle数据库 
 
 1. 如果选择的是oracle数据库,请按照go-oci8包的要求配置pkgconfig和oracle instantclient.
@@ -16,7 +17,7 @@
 ### mysql，mariadb数据库
 1. 请设置环境变量.HBIGDATA_HOME.这个变量中创建目录conf.然后将dbobj中的system.properties复制到conf中.
 
-* 创建目录
+### 创建目录
 
 ```shell
     export HBIGDATA_HOME=/opt/go/hcloud
@@ -25,7 +26,7 @@
     cp dbobj/system.properties ./conf   #将system.properties文件复制到conf目录中.
 ```
 
-* 工程目录样式:
+### 工程目录样式:
 ```
 $HBIGDATA_HOME
             ----bin
@@ -44,7 +45,8 @@ $HBIGDATA_HOME
 ```
 
 在指定的配置文件目录中创建配置文件,配置文件名称指定为:system.properties,在文件中输入下面信息:
-4.1 mysql配置文件
+
+* mysql配置文件
 
 ```
     DB.type=mysql
@@ -52,8 +54,7 @@ $HBIGDATA_HOME
     DB.user = root
     DB.passwd= huang
 ```
-
-4.2 oracle配置文件
+* oracle配置文件
 
 ```
     DB.type=oracle
@@ -64,7 +65,8 @@ $HBIGDATA_HOME
 ```
 
 * 系统启动后,会默认自动对密码进行加密.
-例子
+
+### 例子
 ```go
 package main
 
