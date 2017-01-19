@@ -6,12 +6,15 @@
 
 > go get github.com/hzwy23/dbobj
 
-*使用方法:
+* 使用方法:
 ### oracle数据库 
 
 1. 如果选择的是oracle数据库,请按照go-oci8包的要求配置pkgconfig和oracle instantclient.
 2. oci8.pc在vendor/github.com/mattn/go-oci8中.请按照要求,修改oci8.pc文件,然后修改oracle.go文件，**将第14行的注释去掉**。
 3. 请设置环境变量.HBIGDATA_HOME.这个变量中创建目录conf.然后将dbobj中的system.properties复制到conf中.
+
+### mysql，mariadb数据库
+1. 请设置环境变量.HBIGDATA_HOME.这个变量中创建目录conf.然后将dbobj中的system.properties复制到conf中.
 
 * 创建目录
 
