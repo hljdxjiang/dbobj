@@ -1,12 +1,15 @@
-##dbobj
+## 介绍
+* dbobj
 
 * golang数据库接口
 
 > 这个包,封装了golang与数据库之间的接口,目前支持oracle,mysql数据库
 
+* 获取方式：
+
 > go get github.com/hzwy23/dbobj
 
-* 使用方法:
+## 使用方法:
 
 ### oracle数据库 
 
