@@ -24,9 +24,8 @@
 
 ```shell
     export HBIGDATA_HOME=/opt/go/hcloud
-    cd $HBIGDATA_HOME
-    mkdir conf
-    cp dbobj/system.properties ./conf   #将system.properties文件复制到conf目录中.
+    mkdir $HBIGDATA_HOME/conf
+    cp system.properties $HBIGDATA_HOME/conf   #将system.properties文件复制到conf目录中.
 ```
 
 ### 工程目录样式:
